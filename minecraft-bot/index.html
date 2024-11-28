@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Minecraft Bot Control</title>
+</head>
+<body>
+  <h1>Minecraft Bot Control</h1>
+  <button onclick="startBot()">Start Bot</button>
+  <button onclick="stopBot()">Stop Bot</button>
+
+  <script>
+    function startBot() {
+      fetch('/start-bot');
+    }
+
+    function stopBot() {
+      fetch('/stop-bot');
+    }
+  </script>
+</body>
+</html>
